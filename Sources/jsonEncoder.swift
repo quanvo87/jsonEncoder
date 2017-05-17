@@ -26,7 +26,7 @@
 
     // MARK: - Extensions
     extension User: Equatable {
-        public static func ==(lhs: User, rhs: User) -> Bool {
+        static func ==(lhs: User, rhs: User) -> Bool {
             return  lhs.id          == rhs.id &&
                     lhs.name        == rhs.name &&
                     lhs.address     == rhs.address &&
@@ -35,7 +35,7 @@
     }
 
     extension Address: Equatable {
-        public static func ==(lhs: Address, rhs: Address) -> Bool {
+        static func ==(lhs: Address, rhs: Address) -> Bool {
             return  lhs.number  == rhs.number &&
                     lhs.street  == rhs.street &&
                     lhs.type    == rhs.type
